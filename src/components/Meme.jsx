@@ -13,6 +13,7 @@ function Meme() {
     const randomNumber = Math.floor(Math.random() * allMemes.length);
     const URL = allMemes[randomNumber].url;
     setMemeImg(URL);
+    setCountText(() => 0);
   }
 
   function addText() {
